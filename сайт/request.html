@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion - Заявка на разработку</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="head">
+        <div class="head__container">
+            <nav class="head__nav">
+                <img src="images/favicon.png" alt="Fusion Logo" class="head__logo">
+                <ul class="head__list">
+                    <li class="head__list-item">
+                        <a href="index.html" class="head__list-link">Home</a>
+                    </li>
+                    <li class="head__list-item">
+                        <a href="about.html" class="head__list-link">About</a>
+                    </li>
+                    <li class="head__list-item">
+                        <a href="contact.html" class="head__list-link">Contact</a>
+                    </li>
+                    <li class="head__list-item">
+                        <a href="request.html" class="head__list-link active">Заявка</a>
+                    </li>
+                </ul>
+                <a href="registration.html" class="head__button">Join</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="request-section">
+            <div class="request__container">
+                <h1 class="request__title">Оставьте заявку на разработку</h1>
+                <form action="request.php" method="post" class="request__form">
+                    <div class="form-group">
+                        <label for="project-name" class="form-label">Название проекта</label>
+                        <input type="text" id="project-name" name="project-name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project-description" class="form-label">Описание проекта</label>
+                        <textarea id="project-description" name="project-description" class="form-textarea" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-person" class="form-label">Контактное лицо</label>
+                        <input type="text" id="contact-person" name="contact-person" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Email</label>
+                        <input type="email" id="contact-email" name="contact-email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone" class="form-label">Телефон</label>
+                        <input type="tel" id="contact-phone" name="contact-phone" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="budget" class="form-label">Планируемый бюджет</label>
+                        <input type="text" id="budget" name="budget" class="form-input">
+                    </div>
+                    <button type="submit" class="form-button">Отправить заявку</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
