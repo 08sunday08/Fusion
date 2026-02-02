@@ -28,7 +28,7 @@ body {
     padding-block: 30px;
 }
 
-.head__container, .hero__container {
+.head__container{
     max-width: 1069px; 
     margin-inline: auto;
 }
@@ -67,7 +67,6 @@ ul {
 
 .head__list-link.active{
     color: #abd1c6;
-    border-bottom: 3px solid var(--gray);
     padding-bottom: 5px;
     border-radius: 2px;
 }
@@ -99,27 +98,26 @@ ul {
 }
 
 .hero {
-    margin-top: 260px;
-}
-
-.video {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-    display: block;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 0 5%;
 }
 
 .hero__container{
-    position: relative;
+    justify-content: space-between;
+    margin-inline: auto;
+    max-width: 2000px; 
+    display: flex;
+    align-items: center;
 }
 
 .h1{
     color: #abd1c6;
     font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 75px;
+    line-height: 85px;
 }
 
 .fus {
@@ -128,14 +126,13 @@ ul {
 }
 
 .video {
-    position: absolute;
-    top: -100px;
-    right: -130px;
-    width: 750px;
-    height: 350px;
+    display: block;
+    max-width: 50%;
+    height: auto;
     object-fit: contain;
     border-radius: 20px;
 }
+
 /* Стили для страницы заявки */
 
 .request-section {
@@ -206,4 +203,33 @@ ul {
 
 .form-button:hover {
     opacity: 90%;
+}
+
+
+@media (max-width: 360px) {
+    .head__list {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .head__button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .video {
+        display: none;
+    }
+    .h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .fus {
+        font-size: 20px;
+    }
+    .request__container {
+        padding: 0 10px;
+    }
 }

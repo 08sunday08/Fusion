@@ -22,9 +22,6 @@
                     <li class="head__list-item">
                         <a href="contact.html" class="head__list-link">Contact</a>
                     </li>
-                    <li class="head__list-item">
-                        <a href="request.html" class="head__list-link active">Заявка</a>
-                    </li>
                 </ul>
                 <a href="registration.html" class="head__button">Join</a>
             </nav>
@@ -36,12 +33,12 @@
                 <h1 class="request__title">Оставьте заявку на разработку</h1>
                 <form action="request.php" method="post" class="request__form">
                     <div class="form-group">
-                        <label for="project-name" class="form-label">Название проекта</label>
-                        <input type="text" id="project-name" name="project-name" class="form-input" required>
+                        <label for="project-idea" class="form-label">Название идеи</label>
+                        <input type="text" id="project-idea" name="project-idea" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label for="project-description" class="form-label">Описание проекта</label>
-                        <textarea id="project-description" name="project-description" class="form-textarea" rows="5" required></textarea>
+                        <label for="idea-description" class="form-label">Описание идеи</label>
+                        <textarea id="idea-description" name="idea-description" class="form-textarea" rows="5" required></textarea>
                     </div>
                     <div class="form-group">
                         <label for="contact-person" class="form-label">Контактное лицо</label>
@@ -52,12 +49,8 @@
                         <input type="email" id="contact-email" name="contact-email" class="form-input" required>
                     </div>
                     <div class="form-group">
-                        <label for="contact-phone" class="form-label">Телефон</label>
-                        <input type="tel" id="contact-phone" name="contact-phone" class="form-input">
-                    </div>
-                    <div class="form-group">
-                        <label for="budget" class="form-label">Планируемый бюджет</label>
-                        <input type="text" id="budget" name="budget" class="form-input">
+                        <label for="contact-tg" class="form-label">юз в тг</label>
+                        <input type="text" id="contact-tg" name="contact-tg" class="form-input">
                     </div>
                     <button type="submit" class="form-button">Отправить заявку</button>
                 </form>
